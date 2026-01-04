@@ -113,13 +113,13 @@ Proyek ini mengonversi aplikasi web asli dengan meningkatkan:
 
 ## 📄 Lisensi
 
-This project is created for educational purposes as part of UTS Web Programming 1 assignment. 
+This project is created for educational purposes as part of UAS Mobile Programing 2 assignment. 
 
 Developed by **Luthfy Arief**  
 **Universitas Teknologi Bandung (UTB)**
 
-© 2024 Garasify - Premium Car Modification Platform.  All rights reserved.
-
 ---
+
+© 2026 Garasify - Premium Car Modification Platform.  All rights reserved.
 
 **Catatan:** Proyek ini fokus pada digitalisasi proses manajemen bengkel modifikasi untuk meningkatkan efisiensi operasional dan kepuasan konsumen melalui transparansi, komunikasi yang lebih baik, serta sistem booking dan antrian yang terstruktur.  
