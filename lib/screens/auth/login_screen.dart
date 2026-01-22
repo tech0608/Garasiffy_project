@@ -242,51 +242,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 24),
 
-                  // Demo Credentials Info
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.05),
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: Colors.blue.withOpacity(0.3)),
-                    ),
-                    child: Column(
-                      children: [
-                        const Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.info_outline, color: Colors.blue, size: 20),
-                            SizedBox(width: 8),
-                            Text('Demo Login Account', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold)),
-                          ],
-                        ),
-                        const SizedBox(height: 12),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            const Text('Email:', style: TextStyle(color: GarasifyyTheme.textGrey)),
-                            Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                              decoration: BoxDecoration(color: GarasifyyTheme.primaryRed.withOpacity(0.2), borderRadius: BorderRadius.circular(4)),
-                              child: const Text('user@utb.ac.id', style: TextStyle(color: Colors.white, fontFamily: 'monospace')),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 8),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            const Text('Password:', style: TextStyle(color: GarasifyyTheme.textGrey)),
-                            Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                              decoration: BoxDecoration(color: GarasifyyTheme.primaryRed.withOpacity(0.2), borderRadius: BorderRadius.circular(4)),
-                              child: const Text('utsweb1', style: TextStyle(color: Colors.white, fontFamily: 'monospace')),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
+
                 ],
               ),
             ),

@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../theme/app_theme.dart';
 import '../../providers/auth_provider.dart';
 import '../../services/firestore_service.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -126,6 +127,22 @@ class ProfileScreen extends StatelessWidget {
                     subtitle: 'Kelola daftar kendaraan Anda',
                     onTap: () {
                       context.push('/vehicles');
+                    },
+                  ),
+                  const SizedBox(height: 12),
+                  _buildMenuCard(
+                    context,
+                    icon: Icons.chat,
+                    title: 'Hubungi CS (WhatsApp)',
+                    subtitle: 'Chat langsung dengan kami',
+                    onTap: () async {
+                       final Uri url = Uri.parse('https://wa.me/6285157033668');
+                       if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
+                         // ignore: use_build_context_synchronously
+                         if (context.mounted) {
+                            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Tidak dapat membuka WhatsApp')));
+                         }
+                       }
                     },
                   ),
                   const SizedBox(height: 12),

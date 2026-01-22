@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../../theme/app_theme.dart';
 import 'package:timeline_tile/timeline_tile.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ServiceDetailScreen extends StatelessWidget {
   final String serviceType;
@@ -138,7 +139,14 @@ class ServiceDetailScreen extends StatelessWidget {
           children: [
              Expanded(
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () async {
+                  final Uri url = Uri.parse('https://wa.me/6285157033668');
+                  if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
+                    if (context.mounted) {
+                      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Tidak dapat membuka WhatsApp')));
+                    }
+                  }
+                },
                 style: OutlinedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   side: const BorderSide(color: GarasifyyTheme.primaryRed),

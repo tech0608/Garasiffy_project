@@ -47,8 +47,8 @@ class HelpSupportScreen extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.phone, color: Colors.white),
             title: const Text('WhatsApp Admin', style: TextStyle(color: Colors.white)),
-            subtitle: const Text('+62 812-3456-7890', style: TextStyle(color: Colors.grey)),
-            onTap: () => _launchUrl('https://wa.me/6281234567890'),
+            subtitle: const Text('+62 851-5703-3668', style: TextStyle(color: Colors.grey)),
+            onTap: () => _launchUrl('https://wa.me/6285157033668'),
           ),
         ],
       ),
