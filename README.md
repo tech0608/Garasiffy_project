@@ -97,7 +97,80 @@ Proyek ini mengonversi aplikasi web asli dengan meningkatkan:
 ## 👥 Tim Pengembang
 - **Developer:** @tech0608
 
-## 📄 Lisensi
+## �️ Galeri Aplikasi
+*(Tambahkan screenshot aplikasi di sini)*
+
+| Home Dashboard | Layanan & Services | Detail Layanan |
+|:---:|:---:|:---:|
+| ![Home](assets/screenshots/dashboard_home.png) | ![Services](assets/screenshots/dashboard_services.png) | ![Detail](assets/screenshots/service_detail.png) |
+
+| Booking Form | Profile User |
+|:---:|:---:|
+| ![Booking](assets/screenshots/booking_form.png) | ![Profile](assets/screenshots/profile.png) |
+
+## 💻 Cara Instalasi & Menjalankan
+
+Ikuti langkah berikut untuk menjalankan proyek di komputer lokal:
+
+### Prerequisites:
+- Flutter SDK (v3.0+)
+- Android Studio / VS Code
+- Java JDK (v11+)
+
+### Langkah Instalasi:
+
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/tech0608/garasifyy_mobile.git
+   cd garasifyy_mobile
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   flutter pub get
+   ```
+
+3. **Konfigurasi Firebase**
+   - Pastikan file `google-services.json` sudah ada di folder `android/app/`.
+   - Jika belum, download dari Firebase Console proyek Anda.
+
+4. **Jalankan Aplikasi**
+   Pastikan emulator sudah jalan atau HP terhubung.
+   ```bash
+   # Untuk Mobile (Android/iOS)
+   flutter run
+
+   # Untuk Web (Chrome)
+   flutter run -d chrome
+   ```
+
+5. **Build APK (Untuk Android)**
+   ```bash
+   flutter build apk --release
+   ```
+
+### 📱 Cara Menjalankan Versi Web (Mode Mobile)
+
+Jika Anda menjalankan aplikasi di browser (Chrome) dan ingin melihat tampilan mobile:
+
+1. Jalankan perintah `flutter run -d chrome`.
+2. Setelah browser terbuka, klik kanan pada halaman dan pilih **Inspect** (atau tekan `F12` / `Ctrl+Shift+I`).
+3. Klik icon **Toggle Device Toolbar** (icon berbentuk HP/Tablet) di pojok kiri atas panel Inspect (atau tekan `Ctrl+Shift+M`).
+4. Pilih tipe device pada dropdown di bagian atas layar (contoh: **iPhone 12 Pro** atau **Pixel 5**).
+5. **Refresh halaman** (`F5`) agar tampilan menyesuaikan ukuran layar mobile dengan sempurna.
+
+### 📸 Tips Mengambil Screenshot Presisi (Tanpa Crop Manual)
+
+Agar hasil screenshot **rapi, pas seukuran HP, dan tidak terpotong manual**:
+
+1. Pastikan Anda sudah dalam **Mode Mobile** (Device Toolbar aktif).
+2. Di bagian atas tampilan mobile (toolbar abu-abu), klik **tanda titik tiga (⋮)** di sebelah kanan angka persentase zoom.
+3. Pilih **"Capture screenshot"** (untuk area yang terlihat) atau **"Capture full size screenshot"** (untuk seluruh halaman panjang ke bawah).
+4. Chrome akan otomatis mendownload file PNG dengan ukuran yang **presisi sesuai device** tanpa ada bagian browser yang ikut terbawa.
+
+> **Note:** Zoom level browser sebaiknya 100% agar layout terlihat akurat.
+
+## �📄 Lisensi
 This project is created for educational purposes as part of UAS Mobile Programing 2 assignment.
 
 Developed by **Luthfy Arief**

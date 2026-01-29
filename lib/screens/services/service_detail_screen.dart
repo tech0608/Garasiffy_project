@@ -46,7 +46,7 @@ class ServiceDetailScreen extends StatelessWidget {
             flexibleSpace: FlexibleSpaceBar(
               centerTitle: true,
               title: Text(
-                data['title'], 
+                data['title'] ?? data['name'] ?? 'Layanan', 
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
@@ -79,7 +79,7 @@ class ServiceDetailScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      data['description'],
+                      data['description']?.toString() ?? 'Deskripsi tidak tersedia',
                       style: const TextStyle(height: 1.5, color: Colors.white, fontSize: 15),
                     ),
                     const SizedBox(height: 32),
@@ -94,13 +94,31 @@ class ServiceDetailScreen extends StatelessWidget {
                     if (data['packages'] != null && (data['packages'] as List).isNotEmpty)
                       ...(data['packages'] as List).map((packageData) {
                         final package = packageData as Map<String, dynamic>;
+                        // Handle price that might be int or String
+                        final rawPrice = package['price'];
+                        final String displayPrice;
+                        if (rawPrice is int || rawPrice is double) {
+                          // Format number as Indonesian Rupiah
+                          final formatted = rawPrice.toStringAsFixed(0).replaceAllMapped(
+                            RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'),
+                            (Match m) => '${m[1]}.',
+                          );
+                          displayPrice = 'Rp $formatted';
+                        } else {
+                          displayPrice = rawPrice?.toString() ?? 'Hubungi Kami';
+                        }
+                        
+                        // Handle features that might be List<dynamic>
+                        final rawFeatures = package['features'] as List? ?? [];
+                        final features = rawFeatures.map((e) => e.toString()).toList();
+                        
                         return Padding(
                           padding: const EdgeInsets.only(bottom: 12),
                           child: _buildPackageCard(
                             context,
-                            package['name'] ?? ' Paket',
-                            package['price'] ?? 'Call for Price',
-                            List<String>.from(package['features'] ?? []),
+                            package['name']?.toString() ?? 'Paket',
+                            displayPrice,
+                            features,
                           ),
                         );
                       })

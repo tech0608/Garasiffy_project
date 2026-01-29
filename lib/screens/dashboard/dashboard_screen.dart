@@ -267,10 +267,11 @@ class HomeContent extends StatelessWidget {
                           mainAxisSpacing: 12,
                           childAspectRatio: 0.95, // Better aspect ratio for service cards
                           children: services.map((service) {
+                            // Data sudah dinormalisasi di FirestoreService
                             return ServiceCard(
                               icon: IconData(service['iconCode'] ?? Icons.build.codePoint, fontFamily: 'MaterialIcons'),
-                              title: service['title'] ?? 'Service',
-                              color: Color(service['colorValue'] ?? Colors.red.value),
+                              title: service['title'] ?? service['name'] ?? 'Service',
+                              color: Color(service['colorValue'] ?? 0xFFDC143C),
                               onTap: () => context.push('/service-detail/${service['type']}', extra: service),
                             );
                           }).toList(),
