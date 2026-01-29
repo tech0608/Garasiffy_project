@@ -226,6 +226,42 @@ class FirestoreService {
     await _usersRef.doc(userId).set(data, SetOptions(merge: true));
   }
 
+  // Get User Settings
+  Future<Map<String, dynamic>> getNotificationSettings(String userId) async {
+    try {
+      final doc = await _usersRef.doc(userId).collection('settings').doc('notifications').get();
+      if (doc.exists) {
+        return doc.data() as Map<String, dynamic>;
+      }
+      // Default settings if not found
+      return {
+        'pushEnabled': true,
+        'emailEnabled': true,
+        'promoEnabled': false,
+      };
+    } catch (e) {
+      debugPrint('Error getting settings: $e');
+      return {
+        'pushEnabled': true,
+        'emailEnabled': true,
+        'promoEnabled': false,
+      };
+    }
+  }
+
+  // Update User Settings
+  Future<void> updateNotificationSettings(String userId, Map<String, dynamic> settings) async {
+    try {
+      await _usersRef.doc(userId).collection('settings').doc('notifications').set(
+        settings,
+        SetOptions(merge: true),
+      );
+    } catch (e) {
+      debugPrint('Error updating settings: $e');
+      rethrow;
+    }
+  }
+
   // --- SERVICES ---
   
   // Get all services (with normalization for admin web compatibility)

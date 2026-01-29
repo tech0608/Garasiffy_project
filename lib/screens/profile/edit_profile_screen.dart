@@ -102,32 +102,43 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Photo Placeholder (could be implemented later)
+              // Photo Placeholder (could be implemented later)
               Center(
-                child: Stack(
-                  children: [
-                    Container(
-                      width: 100,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: GarasifyyTheme.cardDark,
-                        border: Border.all(color: GarasifyyTheme.primaryRed, width: 2),
+                child: GestureDetector(
+                  onTap: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('Profile photo upload coming soon!'),
+                        duration: Duration(seconds: 2),
                       ),
-                      child: const Icon(Icons.person, size: 50, color: Colors.white70),
-                    ),
-                    Positioned(
-                      bottom: 0,
-                      right: 0,
-                      child: Container(
-                        padding: const EdgeInsets.all(4),
-                        decoration: const BoxDecoration(
-                          color: GarasifyyTheme.primaryRed,
+                    );
+                  },
+                  child: Stack(
+                    children: [
+                      Container(
+                        width: 100,
+                        height: 100,
+                        decoration: BoxDecoration(
                           shape: BoxShape.circle,
+                          color: GarasifyyTheme.cardDark,
+                          border: Border.all(color: GarasifyyTheme.primaryRed, width: 2),
                         ),
-                        child: const Icon(Icons.camera_alt, size: 20, color: Colors.white),
+                        child: const Icon(Icons.person, size: 50, color: Colors.white70),
                       ),
-                    ),
-                  ],
+                      Positioned(
+                        bottom: 0,
+                        right: 0,
+                        child: Container(
+                          padding: const EdgeInsets.all(4),
+                          decoration: const BoxDecoration(
+                            color: GarasifyyTheme.primaryRed,
+                            shape: BoxShape.circle,
+                          ),
+                          child: const Icon(Icons.camera_alt, size: 20, color: Colors.white),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               const SizedBox(height: 32),
