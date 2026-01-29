@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../screens/dashboard/dashboard_screen.dart';
 import '../screens/dashboard/progress_timeline_screen.dart';

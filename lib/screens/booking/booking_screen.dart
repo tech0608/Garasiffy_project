@@ -138,8 +138,7 @@ class _BookingScreenState extends State<BookingScreen> {
               onPrimary: Colors.white,
               surface: GarasifyyTheme.cardDark,
               onSurface: Colors.white,
-            ),
-            dialogBackgroundColor: GarasifyyTheme.darkBackground,
+            ), dialogTheme: DialogThemeData(backgroundColor: GarasifyyTheme.darkBackground),
           ),
           child: child!,
         );

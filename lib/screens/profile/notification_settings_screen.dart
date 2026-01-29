@@ -59,7 +59,7 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
     return SwitchListTile(
       value: value,
       onChanged: onChanged,
-      activeColor: GarasifyyTheme.primaryRed,
+      activeThumbColor: GarasifyyTheme.primaryRed,
       title: Text(title, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
       subtitle: Text(subtitle, style: const TextStyle(color: Colors.white70)),
       contentPadding: EdgeInsets.zero,
