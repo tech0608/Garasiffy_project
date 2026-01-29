@@ -100,13 +100,13 @@ Proyek ini mengonversi aplikasi web asli dengan meningkatkan:
 ## �️ Galeri Aplikasi
 *(Tambahkan screenshot aplikasi di sini)*
 
-| Home Dashboard | Layanan & Services | Detail Layanan |
+| Login Screen | Home Dashboard | Layanan & Services |
 |:---:|:---:|:---:|
-| ![Home](assets/screenshots/dashboard_home.png) | ![Services](assets/screenshots/dashboard_services.png) | ![Detail](assets/screenshots/service_detail.png) |
+| ![Login](assets/screenshots/login_screen.png) | ![Home](assets/screenshots/dashboard_home.png) | ![Services](assets/screenshots/dashboard_services.png) |
 
-| Booking Form | Profile User |
-|:---:|:---:|
-| ![Booking](assets/screenshots/booking_form.png) | ![Profile](assets/screenshots/profile.png) |
+| Detail Layanan | Booking Form | Profile User |
+|:---:|:---:|:---:|
+| ![Detail](assets/screenshots/service_detail.png) | ![Booking](assets/screenshots/booking_form.png) | ![Profile](assets/screenshots/profile.png) |
 
 ## 💻 Cara Instalasi & Menjalankan
 
