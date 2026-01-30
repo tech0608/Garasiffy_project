@@ -181,3 +181,26 @@ Developed by **Luthfy Arief**
 © 2026 Garasify - Premium Car Modification Platform. All rights reserved.
 
 **Catatan:** Proyek ini fokus pada digitalisasi proses manajemen bengkel modifikasi untuk meningkatkan efisiensi operasional dan kepuasan konsumen melalui transparansi, komunikasi yang lebih baik, serta sistem booking dan antrian yang terstruktur.
+
+## 🚀 Deployment & Instalasi
+
+Proyek ini telah dikonfigurasi untuk deployment ke platform Android.
+
+### 📱 Cara Build & Install APK
+1.  Pastikan konfigurasi `android/app/build.gradle` sudah benar (sudah saya perbaiki untuk menangani lint & signing).
+2.  Jalankan perintah berikut di terminal:
+    ```bash
+    flutter build apk --release
+    ```
+3.  Setelah selesai, file APK akan muncul di:
+    `build/app/outputs/flutter-apk/app-release.apk`
+4.  Transfer file tersebut ke HP Anda dan install.
+    *(Catatan: Anda mungkin perlu mengizinkan instalasi dari "Unknown Sources" karena menggunakan debug signing)*.
+
+### 🛠️ Mengatasi Masalah Build
+Jika Anda mengalami error saat build, coba jalankan:
+```bash
+flutter clean
+flutter pub get
+flutter build apk --release
+```
