@@ -1,206 +1,250 @@
-# Garasiffy - Digital Workshop Management System
+<div align="center">
 
-## 📋 Latar Belakang Proyek
+# 🚗 Garasiffy Mobile
 
-### Tentang Garasiffy
-**Garasiffy** adalah sebuah startup yang bergerak di bidang layanan bengkel modifikasi kendaraan dengan konsep **"One Stop Modification"**. Bengkel ini menyediakan layanan modifikasi komprehensif yang meliputi:
+### Premium Car Modification Platform
 
-- **Engine** - Modifikasi mesin dan performa kendaraan
-- **Interior** - Penyesuaian dan peningkatan bagian dalam kendaraan
-- **Exterior** - Modifikasi tampilan luar kendaraan
-- **Audio** - Instalasi dan peningkatan sistem audio kendaraan
+[![Flutter](https://img.shields.io/badge/Flutter-3.0+-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-3.0+-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
+[![License](https://img.shields.io/badge/License-Educational-green?style=for-the-badge)](LICENSE)
 
-### Masalah yang Dihadapi
-Sebelum adanya sistem digital, Garasiffy menghadapi beberapa tantangan dalam mengelola operasional bengkel:
+<p align="center">
+  <strong>Digital Workshop Management System untuk Bengkel Modifikasi</strong>
+</p>
 
-- 📊 **Pengelolaan antrian yang tidak terstruktur** - Kesulitan dalam melacak kendaraan mana yang sedang dikerjakan dan urutan pengerjaan
-- 🔍 **Transparansi proses kerja yang terbatas** - Konsumen tidak dapat memantau progress pengerjaan kendaraan mereka secara real-time
-- 📱 **Komunikasi yang kurang efisien** - Antara konsumen dan pengelola bengkel memerlukan sistem yang lebih baik
-- ⏱️ **Estimasi waktu yang tidak akurat** - Sulit memberikan informasi kepastian kapan pekerjaan akan selesai
-- 📈 **Manajemen sumber daya yang tidak optimal** - Kesulitan dalam mengalokasikan mekanik dan peralatan dengan efisien
-
-### Solusi: Aplikasi Garasiffy Mobile
-Proyek ini merupakan konversi dari versi web sebelumnya ([Garasifyy_UTS_Web1](https://github.com/tech0608/Garasifyy_UTS_Web1)) ke platform mobile yang lebih accessible dan user-friendly.
-
-#### Tujuan Aplikasi:
-
-1. **Untuk Konsumen:**
-   - ✅ Memudahkan pemesanan dan booking modifikasi kendaraan
-   - ✅ Otomatis masuk ke dalam antrian setelah booking
-   - ✅ Menerima estimasi waktu kapan dapat masuk ke bengkel
-   - ✅ Memantau progress pengerjaan secara real-time (sudah berapa persen dikerjakan)
-   - ✅ Menerima notifikasi/update tentang perkembangan pekerjaan
-   - ✅ Komunikasi langsung dengan bengkel
+<p align="center">
+  <em>One Stop Modification - Engine • Interior • Exterior • Audio</em>
+</p>
 
 ---
 
-## 🎯 Fitur Utama
-Aplikasi Garasiffy dirancang dengan fitur-fitur berikut:
+## 📥 Download APK
 
-### 📅 Booking System (Sistem Pemesanan)
-- **Browse Services** - Konsumen dapat melihat daftar layanan modifikasi yang tersedia
-- **Book Modification** - Konsumen dapat memilih jenis modifikasi yang diinginkan
-- **Automatic Queue Entry** - Setelah booking selesai, konsumen otomatis masuk ke dalam antrian
-- **Time Estimation** - Sistem memberikan estimasi tanggal dan waktu kapan kendaraan dapat masuk ke bengkel berdasarkan:
-  - Antrian saat ini
-  - Kapasitas mekanik
-  - Durasi pengerjaan untuk jenis modifikasi yang dipilih
-- **Booking Confirmation** - Konfirmasi booking dengan detail lengkap
+<a href="https://github.com/tech0608/Garasiffy_project/releases/latest">
+  <img src="https://img.shields.io/badge/Download-APK_v1.0.0-success?style=for-the-badge&logo=android&logoColor=white" alt="Download APK"/>
+</a>
 
-### User Management
-- Registrasi dan login untuk konsumen
+**[⬇️ Download APK Terbaru](https://github.com/tech0608/Garasiffy_project/releases/latest/download/app-release.apk)**
+
+> 💡 **Catatan:** Aktifkan "Install dari sumber tidak dikenal" di pengaturan HP Android Anda untuk menginstall APK.
+
+---
+
+</div>
+
+## 📋 Tentang Garasiffy
+
+**Garasiffy** adalah startup bengkel modifikasi kendaraan dengan konsep **"One Stop Modification"**. Aplikasi mobile ini membantu mendigitalisasi proses manajemen bengkel untuk meningkatkan efisiensi dan kepuasan konsumen.
+
+### 🎯 Masalah yang Dipecahkan
+
+| Masalah | Solusi |
+|---------|--------|
+| 📊 Antrian tidak terstruktur | Sistem queue management real-time |
+| 🔍 Transparansi terbatas | Progress tracking dengan persentase |
+| 📱 Komunikasi kurang efisien | Notifikasi otomatis & update status |
+| ⏱️ Estimasi tidak akurat | Kalkulasi estimasi berdasarkan workload |
+
+---
+
+## ✨ Fitur Utama
+
+<table>
+<tr>
+<td width="50%">
+
+### 📅 Booking System
+- Browse layanan modifikasi
+- Booking online dengan kalender
+- Estimasi waktu otomatis
+- Konfirmasi booking instan
+
+</td>
+<td width="50%">
+
+### 👥 User Management
+- Registrasi & login aman
 - Profile management
-- History riwayat modifikasi
-- Data kendaraan konsumen
+- Riwayat modifikasi
+- Data kendaraan tersimpan
 
-### Queue Management (Manajemen Antrian)
-- Daftar antrian kendaraan yang real-time
-- Status pengerjaan kendaraan (menunggu/sedang dikerjakan/selesai)
-- Prioritas antrian
-- Estimasi waktu penyelesaian yang dinamis
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-### Progress Tracking (Pemantauan Progress)
-- Update persentase progres pengerjaan
-- Breakdown task/pekerjaan yang dilakukan
+### 📊 Progress Tracking
+- Update persentase real-time
 - Timeline pengerjaan
-- Notifikasi otomatis kepada konsumen saat status berubah
+- Breakdown task detail
+- Foto progress (opsional)
 
-### Notification System
-- Notifikasi push untuk update status kendaraan
-- Notifikasi reminder booking approach (kendaraan akan masuk bengkel)
-- Email/SMS notification (opsional)
+</td>
+<td width="50%">
+
+### 🔔 Notification System
+- Push notification status
+- Reminder booking
+- Update selesai
+- Promo & info bengkel
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📱 Screenshot Aplikasi
+
+| Login | Dashboard | Services |
+|:---:|:---:|:---:|
+| ![Login](assets/screenshots/login_screen.png) | ![Home](assets/screenshots/dashboard_home.png) | ![Services](assets/screenshots/dashboard_services.png) |
+
+| Detail Layanan | Booking | Profile |
+|:---:|:---:|:---:|
+| ![Detail](assets/screenshots/service_detail.png) | ![Booking](assets/screenshots/booking_form.png) | ![Profile](assets/screenshots/profile.png) |
 
 ---
 
 ## 🛠️ Tech Stack
-*Teknologi yang digunakan:*
-- **Framework:** Flutter (Mobile)
-- **Language:** Dart
-- **Backend:** Firebase (Firestore, Auth, Cloud Functions)
-- **State Management:** Provider
-- **Architecture:** MVVM Design Pattern
 
-## 📦 Konversi dari Web Version
-Proyek ini mengonversi aplikasi web asli dengan meningkatkan:
-- User experience untuk mobile devices
-- Performa dan kecepatan akses
-- Kemudahan penggunaan real-time di lapangan
-- Integration dengan notification system
-- Fitur booking yang seamless dan user-friendly
-
-## 📱 Platform Target
-- **Android**
-
-## 🚀 Status Proyek
-*Completed (v1.0.0)*
-
-## 👥 Tim Pengembang
-- **Developer:** @tech0608
-
-## �️ Galeri Aplikasi
-*(Tambahkan screenshot aplikasi di sini)*
-
-| Login Screen | Home Dashboard | Layanan & Services |
-|:---:|:---:|:---:|
-| ![Login](assets/screenshots/login_screen.png) | ![Home](assets/screenshots/dashboard_home.png) | ![Services](assets/screenshots/dashboard_services.png) |
-
-| Detail Layanan | Booking Form | Profile User |
-|:---:|:---:|:---:|
-| ![Detail](assets/screenshots/service_detail.png) | ![Booking](assets/screenshots/booking_form.png) | ![Profile](assets/screenshots/profile.png) |
-
-## 💻 Cara Instalasi & Menjalankan
-
-Ikuti langkah berikut untuk menjalankan proyek di komputer lokal:
-
-### Prerequisites:
-- Flutter SDK (v3.0+)
-- Android Studio / VS Code
-- Java JDK (v11+)
-
-### Langkah Instalasi:
-
-1. **Clone Repository**
-   ```bash
-   git clone https://github.com/tech0608/garasifyy_mobile.git
-   cd garasifyy_mobile
-   ```
-
-2. **Install Dependencies**
-   ```bash
-   flutter pub get
-   ```
-
-3. **Konfigurasi Firebase**
-   - Pastikan file `google-services.json` sudah ada di folder `android/app/`.
-   - Jika belum, download dari Firebase Console proyek Anda.
-
-4. **Jalankan Aplikasi**
-   Pastikan emulator sudah jalan atau HP terhubung.
-   ```bash
-   # Untuk Mobile (Android/iOS)
-   flutter run
-
-   # Untuk Web (Chrome)
-   flutter run -d chrome
-   ```
-
-5. **Build APK (Untuk Android)**
-   ```bash
-   flutter build apk --release
-   ```
-
-### 📱 Cara Menjalankan Versi Web (Mode Mobile)
-
-Jika Anda menjalankan aplikasi di browser (Chrome) dan ingin melihat tampilan mobile:
-
-1. Jalankan perintah `flutter run -d chrome`.
-2. Setelah browser terbuka, klik kanan pada halaman dan pilih **Inspect** (atau tekan `F12` / `Ctrl+Shift+I`).
-3. Klik icon **Toggle Device Toolbar** (icon berbentuk HP/Tablet) di pojok kiri atas panel Inspect (atau tekan `Ctrl+Shift+M`).
-4. Pilih tipe device pada dropdown di bagian atas layar (contoh: **iPhone 12 Pro** atau **Pixel 5**).
-5. **Refresh halaman** (`F5`) agar tampilan menyesuaikan ukuran layar mobile dengan sempurna.
-
-### 📸 Tips Mengambil Screenshot Presisi (Tanpa Crop Manual)
-
-Agar hasil screenshot **rapi, pas seukuran HP, dan tidak terpotong manual**:
-
-1. Pastikan Anda sudah dalam **Mode Mobile** (Device Toolbar aktif).
-2. Di bagian atas tampilan mobile (toolbar abu-abu), klik **tanda titik tiga (⋮)** di sebelah kanan angka persentase zoom.
-3. Pilih **"Capture screenshot"** (untuk area yang terlihat) atau **"Capture full size screenshot"** (untuk seluruh halaman panjang ke bawah).
-4. Chrome akan otomatis mendownload file PNG dengan ukuran yang **presisi sesuai device** tanpa ada bagian browser yang ikut terbawa.
-
-> **Note:** Zoom level browser sebaiknya 100% agar layout terlihat akurat.
-
-## �📄 Lisensi
-This project is created for educational purposes as part of UAS Mobile Programing 2 assignment.
-
-Developed by **Luthfy Arief**
-**Universitas Teknologi Bandung (UTB)**
+```
+┌─────────────────────────────────────────────────────────┐
+│  Frontend                                                │
+│  ├── Flutter 3.0+                                       │
+│  ├── Dart 3.0+                                          │
+│  └── Provider (State Management)                        │
+├─────────────────────────────────────────────────────────┤
+│  Backend                                                 │
+│  ├── Firebase Authentication                            │
+│  ├── Cloud Firestore                                    │
+│  └── Firebase Cloud Messaging                           │
+├─────────────────────────────────────────────────────────┤
+│  Architecture                                            │
+│  └── MVVM Design Pattern                                │
+└─────────────────────────────────────────────────────────┘
+```
 
 ---
 
-© 2026 Garasify - Premium Car Modification Platform. All rights reserved.
+## 🚀 Quick Start
 
-**Catatan:** Proyek ini fokus pada digitalisasi proses manajemen bengkel modifikasi untuk meningkatkan efisiensi operasional dan kepuasan konsumen melalui transparansi, komunikasi yang lebih baik, serta sistem booking dan antrian yang terstruktur.
+### Prerequisites
+- Flutter SDK v3.0+
+- Android Studio / VS Code
+- Java JDK 11+
 
-## 🚀 Deployment & Instalasi
+### Installation
 
-Proyek ini telah dikonfigurasi untuk deployment ke platform Android.
-
-### 📱 Cara Build & Install APK
-1.  Pastikan konfigurasi `android/app/build.gradle` sudah benar (sudah saya perbaiki untuk menangani lint & signing).
-2.  Jalankan perintah berikut di terminal:
-    ```bash
-    flutter build apk --release
-    ```
-3.  Setelah selesai, file APK akan muncul di:
-    `build/app/outputs/flutter-apk/app-release.apk`
-4.  Transfer file tersebut ke HP Anda dan install.
-    *(Catatan: Anda mungkin perlu mengizinkan instalasi dari "Unknown Sources" karena menggunakan debug signing)*.
-
-### 🛠️ Mengatasi Masalah Build
-Jika Anda mengalami error saat build, coba jalankan:
 ```bash
+# 1. Clone repository
+git clone https://github.com/tech0608/Garasiffy_project.git
+cd Garasiffy_project
+
+# 2. Install dependencies
+flutter pub get
+
+# 3. Run aplikasi
+flutter run
+
+# 4. Build APK (opsional)
+flutter build apk --release
+```
+
+### 📦 Output APK
+Setelah build berhasil, APK tersedia di:
+```
+build/app/outputs/flutter-apk/app-release.apk
+```
+
+---
+
+## 🔧 Troubleshooting
+
+<details>
+<summary><b>❌ Build gagal karena path dengan spasi</b></summary>
+
+Jika username Windows Anda mengandung spasi (contoh: `C:\Users\John Doe`), pindahkan project ke lokasi tanpa spasi:
+
+```bash
+# Pindahkan ke C:\dev\
+Copy-Item -Recurse "path\ke\project" "C:\dev\garasifyy_mobile"
+cd C:\dev\garasifyy_mobile
+flutter clean && flutter build apk --release
+```
+</details>
+
+<details>
+<summary><b>❌ Gradle connection error</b></summary>
+
+```bash
+# Stop Gradle daemon
+cd android
+./gradlew --stop
+
+# Clean dan rebuild
 flutter clean
 flutter pub get
 flutter build apk --release
 ```
+</details>
+
+<details>
+<summary><b>❌ Firebase configuration error</b></summary>
+
+Pastikan file `google-services.json` ada di `android/app/`. Download dari [Firebase Console](https://console.firebase.google.com) jika belum ada.
+</details>
+
+---
+
+## 📂 Project Structure
+
+```
+garasifyy_mobile/
+├── lib/
+│   ├── models/          # Data models
+│   ├── screens/         # UI screens
+│   │   ├── auth/        # Login & register
+│   │   ├── booking/     # Booking flow
+│   │   ├── dashboard/   # Main dashboard
+│   │   ├── profile/     # User profile
+│   │   └── services/    # Service catalog
+│   ├── services/        # Firebase services
+│   ├── providers/       # State management
+│   ├── router/          # App routing
+│   └── main.dart        # Entry point
+├── android/             # Android config
+├── assets/              # Images & fonts
+└── pubspec.yaml         # Dependencies
+```
+
+---
+
+## 👨‍💻 Developer
+
+<table>
+<tr>
+<td align="center">
+<strong>Luthfy Arief</strong><br>
+<a href="https://github.com/tech0608">@tech0608</a><br>
+<em>Universitas Teknologi Bandung (UTB)</em>
+</td>
+</tr>
+</table>
+
+---
+
+## 📄 License
+
+Project ini dibuat untuk keperluan edukasi sebagai tugas **UAS Mobile Programming 2**.
+
+---
+
+<div align="center">
+
+**© 2026 Garasiffy - Premium Car Modification Platform**
+
+<sub>Made with ❤️ using Flutter</sub>
+
+</div>
